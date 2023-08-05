@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* =======================
+    Common CSS start
+========================  */
+h1,h2,h3,
+h4,h5,h6,p,a{
+    font-family: 'Lato', sans-serif;
+}
+nav a{
+    font-size: 30px;
+    font-weight: 700;
+    color: #2d3950;
+}
+
+
+/* =======================
+    Hero part start
+========================  */
+#hero_part{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/STRICT.png) center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+#hero_part .row h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    margin-top: 45%;
+    border-bottom: 2px solid #15a4fa;
+}
+#hero_part button{
+    color: #fff;
+    border: 1px solid #15a4fa;
+    transition: .4s;
+}
+#hero_part button:hover{
+    color: #15a4fa;
+    border:1px solid #fff;
+    background-color: #fff;
+}
+
+/* =======================
+    Hero part end
+========================  */
+
+/* =======================
+    About part start
+======================= */
+#about_part{
+    width: 100%;
+    background: #f6f9f9;
+    padding: 70px 0px;
+}
+/* =======================
+    About part start
+======================= */
+#service_part{
+    padding: 80px 0px 50px 0px;
+}
+#service_part h3{
+    margin-top: 12px;
+}
+/* =======================
+    About part end
+======================= */
+/* =======================
+    Works part start
+======================= */
+
+.port_img{
+    position: relative;
+    overflow: hidden;
+}
+
+.port_img_overlay{
+    height: 100%;
+    width: 0;
+    background: rgba(21, 164, 250, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition: .4s;
+}
+.port_img:hover .port_img_overlay{
+    width: 100%;
+    visibility: visible;
+}
+.port_img_overlay i{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+
+}
+#port_part{
+    width: 100%;
+    background: #f6f9f9;
+    padding: 70px 50px;
+}
+
+/* =======================
+    Works part end
+======================= */
+/* =======================
+    Contact part start
+======================= */
+#contact_part{
+    background: url(../images/From_bg.png) center no-repeat;
+    background-size: cover;
+    padding: 70px 50px;
+}
+.contact_main_con{
+    width: 100%;
+    height: auto;
+    margin: 0 auto 0 auto;
+}
+.input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+}
+.input_msg{
+    width: 100%;
+    height: 150px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+}
+input::placeholder{
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    padding-left: 10px;
+    
+}
+.input_msg::placeholder{
+    padding-top: -50px;
+}
+.input_button{
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    margin-right: 0;
+    margin-left: auto;
+    padding: 0px 20px;
+    color: #fff;
+    border: 1px solid #15a4fa;
+    border-radius: 5px;
+}
+
+/* =======================
+    Contact part end
+======================= */
+/* =======================
+    Copyright part start
+======================= */
+#copyright_part{
+    width: 100%;
+    height: 50px;
+    padding: 10px 0px;
+
+}
+#copyright_part i{
+    padding: 10px;
+    border: 1px solid;
+    color: #fff;
+    background: #15a4fa;
+    font-size: 18px;
+    transition: .3s;
+}
+#copyright_part i:hover{
+    background: #0b5888;
+}
+/* =======================
+    Copyright part end
+======================= */
+/* =======================
+    Responsive Css start
+========================= */
+@media (max-width: 576px){
+    #hero_part .row h1{
+        font-size: 80px;
+        font-weight: 700;
+    }
+
+}
+
+
